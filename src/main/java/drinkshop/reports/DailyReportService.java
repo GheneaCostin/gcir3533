@@ -13,12 +13,10 @@ public class DailyReportService {
     }
 
     public double getTotalRevenue() {
-        return repo.findAll().st    ream().mapToDouble(Order::getTotal).sum();
+        return repo.findAll().stream().mapToDouble(Order::getTotal).sum();
     }
 
     public int getTotalOrders() {
-//        List<Order> orders = StreamSupport.stream(repo.findAll().spliterator(), false)
-//                .collect(Collectors.toList());
 
         return repo.findAll().size();
     }
