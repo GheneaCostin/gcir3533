@@ -3,12 +3,14 @@
   <groupId>com.example</groupId>
   <artifactId>MyDrinkShop</artifactId>
   <version>1.0-SNAPSHOT</version>
+
   <properties>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
     <javafx.version>21</javafx.version>
     <junit.version>5.10.0</junit.version>
   </properties>
+
   <dependencies>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
@@ -16,32 +18,34 @@
       <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
+
     <dependency>
       <groupId>org.openjfx</groupId>
       <artifactId>javafx-base</artifactId>
-      <version>22.0.1</version>
+      <version>${javafx.version}</version>
     </dependency>
     <dependency>
       <groupId>org.openjfx</groupId>
       <artifactId>javafx-graphics</artifactId>
-      <version>22.0.1</version>
+      <version>${javafx.version}</version>
     </dependency>
     <dependency>
       <groupId>org.openjfx</groupId>
       <artifactId>javafx-controls</artifactId>
-      <version>22.0.1</version>
+      <version>${javafx.version}</version>
     </dependency>
     <dependency>
       <groupId>org.openjfx</groupId>
       <artifactId>javafx-fxml</artifactId>
-      <version>22.0.1</version>
+      <version>${javafx.version}</version>
     </dependency>
+
     <dependency>
       <groupId>org.controlsfx</groupId>
       <artifactId>controlsfx</artifactId>
-      <version>11.0.1</version>
-    </dependency>
+      <version>11.1.2</version> </dependency>
   </dependencies>
+
   <build>
     <plugins>
       <plugin>
